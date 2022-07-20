@@ -1,0 +1,142 @@
+@import "nullscss.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.generator--wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #159957;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #159957);
+    height: inherit;
+}
+
+.passwordCard {
+    width: 700px;
+    display: grid;
+    text-align: center;
+    color: white;
+
+
+    &__title {
+        margin: 10px 0px 10px 0px;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    &__output {
+        background: transparent;
+        margin: 0px 0px 10px 0px;
+        display: block;
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid white;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    &__checkbox {
+        margin: 10px;
+    }
+
+    &__checkbox input {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin: 0px 5px 0px 0px;
+    }
+
+    &__lenght {
+        display: grid;
+        margin: 10px 5px 20px 5px;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    &__progressBar {
+        background: linear-gradient(to right, #ff0000, #fff200, #1e9600);
+        position: absolute;
+        height: 10px;
+        top: 30px;
+        border-radius: 25px;
+        width: 10%;
+    }
+
+    &__range {
+        appearance: none;
+        outline: none;
+        border-radius: 25px;
+        margin: 20px 0px 20px 0px;
+        height: 10px;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: none;
+    }
+
+
+    &__rangeValue {
+        margin: 20px 0px 20px 0px;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    #slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: orange;
+        cursor: pointer;
+    }
+
+    &__button {
+        margin: 0px 10px 10px 10px;
+    }
+
+    #generate {
+        margin: 0px 10px 0px 0px;
+    }
+
+    &__button button {
+        letter-spacing: 2px;
+        transition: 0.3s;
+        cursor: pointer;
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 10px;
+        background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
+    }
+
+    #generate:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 7px 0 black;
+    }
+
+    #generate:active {
+        transform: translateY(-2px);
+        box-shadow: 0 3px 0 black;
+    }
+
+    #copy:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 7px 0 black;
+
+    }
+
+    #copy:active {
+        transform: translateY(-2px);
+        box-shadow: 0 3px 0 black;
+    }
+}
