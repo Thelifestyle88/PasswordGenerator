@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+    <div class="generator--wrapper">
+        <div class="passwordCard">
+            <div class="passwordCard__title">Password generator</div>
+            <input disabled class="passwordCard__output" type="text" id="output">
+            <form class="passwordCard__checkbox">
+                <input checked type="checkbox" name="lowercase" id="lowercase">lowercase
+                <input type="checkbox" name="uppercase" id="uppercase">Uppercase
+                <input type="checkbox" name="numbers" id="numbers">Numbers(1,2,3...)
+                <input type="checkbox" name="specialSymbols" id="specialSymbols">special symbols (!@%&..)
+            </form>
+            <div class="passwordCard__lenght">Длина пароля
+                <div id="rangeValue" class="passwordCard__rangeValue"></div>
+                <div id="progressBar" class="passwordCard__progressBar"></div>
+                <input class="passwordCard__range" type="range" min="4" max="30" value="6" id="slider">
+            </div>
+            <div class="passwordCard__button">
+                <button id="generate">Generate</button>
+                <button id="copy">Copy Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
